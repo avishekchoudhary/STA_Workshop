@@ -1,0 +1,89 @@
+OpenSTA 2.3.1 6802190c15 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+create_clock -period 50 -name tau2015_clk [get_ports tau2015_clk]
+set_input_delay 0 -min -rise [get_ports inp1] -clock tau2015_clk
+set_input_delay 0 -min -fall [get_ports inp1] -clock tau2015_clk
+set_input_delay 5 -max -rise [get_ports inp1] -clock tau2015_clk
+set_input_delay 5 -max -fall [get_ports inp1] -clock tau2015_clk
+set_input_delay 0 -min -rise [get_ports inp2] -clock tau2015_clk
+set_input_delay 0 -min -fall [get_ports inp2] -clock tau2015_clk
+set_input_delay 1 -max -rise [get_ports inp2] -clock tau2015_clk
+set_input_delay 1 -max -fall [get_ports inp2] -clock tau2015_clk
+set_input_transition 10 -min -rise [get_ports inp1] 
+set_input_transition 15 -min -fall [get_ports inp1] 
+set_input_transition 20 -max -rise [get_ports inp1] 
+set_input_transition 25 -max -fall [get_ports inp1] 
+set_input_transition 30 -min -rise [get_ports inp2] 
+set_input_transition 30 -min -fall [get_ports inp2] 
+set_input_transition 40 -max -rise [get_ports inp2] 
+set_input_transition 40 -max -fall [get_ports inp2] 
+set_input_transition 10 -min -rise [get_ports tau2015_clk] 
+set_input_transition 15 -min -fall [get_ports tau2015_clk] 
+set_input_transition 10 -max -rise [get_ports tau2015_clk] 
+set_input_transition 15 -max -fall [get_ports tau2015_clk] 
+set_load -pin_load 4 [get_ports out]
+set_output_delay -10 -min -rise [get_ports out] -clock tau2015_clk
+set_output_delay -10 -min -fall [get_ports out] -clock tau2015_clk
+set_output_delay 30 -max -rise [get_ports out] -clock tau2015_clk
+set_output_delay 30 -max -fall [get_ports out] -clock tau2015_clk
+Startpoint: f1 (falling edge-triggered flip-flop clocked by tau2015_clk)
+Endpoint: out (output port clocked by tau2015_clk)
+Path Group: tau2015_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+  25.00   25.00   clock tau2015_clk (fall edge)
+   0.00   25.00   clock network delay (ideal)
+   0.00   25.00 v f1/CLK_N (sky130_fd_sc_hd__dfbbn_2)
+   0.51   25.51 ^ f1/Q (sky130_fd_sc_hd__dfbbn_2)
+   0.03   25.55 v u2/Y (sky130_fd_sc_hd__inv_1)
+  22.41   47.96 ^ u3/Y (sky130_fd_sc_hd__inv_1)
+   0.00   47.96 ^ out (out)
+          47.96   data arrival time
+
+  50.00   50.00   clock tau2015_clk (rise edge)
+   0.00   50.00   clock network delay (ideal)
+   0.00   50.00   clock reconvergence pessimism
+ -30.00   20.00   output external delay
+          20.00   data required time
+---------------------------------------------------------
+          20.00   data required time
+         -47.96   data arrival time
+---------------------------------------------------------
+         -27.96   slack (VIOLATED)
+
+
+Startpoint: inp1 (input port clocked by tau2015_clk)
+Endpoint: f1 (falling edge-triggered flip-flop clocked by tau2015_clk)
+Path Group: tau2015_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock tau2015_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 v input external delay
+   0.00    5.00 v inp1 (in)
+   3.33    8.33 ^ u1/Y (sky130_fd_sc_hd__nand2_1)
+   0.08    8.41 v u4/Y (sky130_fd_sc_hd__nor2_1)
+   0.00    8.41 v f1/D (sky130_fd_sc_hd__dfbbn_2)
+           8.41   data arrival time
+
+  25.00   25.00   clock tau2015_clk (fall edge)
+   0.00   25.00   clock network delay (ideal)
+   0.00   25.00   clock reconvergence pessimism
+          25.00 v f1/CLK_N (sky130_fd_sc_hd__dfbbn_2)
+  -0.31   24.69   library setup time
+          24.69   data required time
+---------------------------------------------------------
+          24.69   data required time
+          -8.41   data arrival time
+---------------------------------------------------------
+          16.27   slack (MET)
+
+

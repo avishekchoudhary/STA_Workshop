@@ -1,0 +1,35 @@
+OpenSTA 2.3.1 6802190c15 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Startpoint: inp1 (input port clocked by tau2015_clk)
+Endpoint: f1 (rising edge-triggered flip-flop clocked by tau2015_clk)
+Path Group: tau2015_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock tau2015_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   5.00    5.00 ^ input external delay
+   0.00    5.00 ^ inp1 (in)
+ 113.95  118.95 v u1/o (NAND2_X1)
+ 119.78  238.73 ^ u4/o (NOR2_X1)
+   8.32  247.05 ^ f1/d (DFF_X80)
+         247.05   data arrival time
+
+  50.00   50.00   clock tau2015_clk (rise edge)
+   0.00   50.00   clock network delay (ideal)
+   0.00   50.00   clock reconvergence pessimism
+          50.00 ^ f1/ck (DFF_X80)
+  -1.50   48.50   library setup time
+          48.50   data required time
+---------------------------------------------------------
+          48.50   data required time
+        -247.05   data arrival time
+---------------------------------------------------------
+        -198.55   slack (VIOLATED)
+
+

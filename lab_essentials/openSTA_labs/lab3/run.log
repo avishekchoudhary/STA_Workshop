@@ -1,0 +1,41 @@
+OpenSTA 2.3.1 6802190c15 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: s27.sdc line 18, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: s27.sdc line 19, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: s27.sdc line 20, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: s27.sdc line 21, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: F1 (rising edge-triggered flip-flop clocked by clk_net)
+Endpoint: F2 (rising edge-triggered flip-flop clocked by clk_net)
+Path Group: clk_net
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk_net (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ F1/CK (DFFR_X2)
+ 141.53  141.53 ^ F1/Q (DFFR_X2)
+   8.51  150.04 v U3/ZN (INV_X1)
+   7.82  157.86 ^ U4/ZN (INV_X1)
+   6.63  164.49 v U5/ZN (NAND2_X2)
+  23.62  188.10 ^ U7/ZN (NOR2_X1)
+   0.00  188.10 ^ F2/D (DFFR_X2)
+         188.10   data arrival time
+
+   1.00    1.00   clock clk_net (rise edge)
+   0.00    1.00   clock network delay (ideal)
+   0.00    1.00   clock reconvergence pessimism
+           1.00 ^ F2/CK (DFFR_X2)
+ -30.22  -29.22   library setup time
+         -29.22   data required time
+---------------------------------------------------------
+         -29.22   data required time
+        -188.10   data arrival time
+---------------------------------------------------------
+        -217.32   slack (VIOLATED)
+
+

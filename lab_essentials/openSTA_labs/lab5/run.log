@@ -1,0 +1,178 @@
+OpenSTA 2.3.1 6802190c15 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: cell tau2015_s27_Early/DFFRS_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/DFFRS_X1.
+Warning: cell tau2015_s27_Late/DFFRS_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/DFFRS_X1.
+Warning: cell tau2015_s27_Early/DFFRS_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/DFFRS_X2.
+Warning: cell tau2015_s27_Late/DFFRS_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/DFFRS_X2.
+Warning: cell tau2015_s27_Early/DFFR_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/DFFR_X1.
+Warning: cell tau2015_s27_Late/DFFR_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/DFFR_X1.
+Warning: cell tau2015_s27_Early/DFFR_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/DFFR_X2.
+Warning: cell tau2015_s27_Late/DFFR_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/DFFR_X2.
+Warning: cell tau2015_s27_Early/DFFS_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/DFFS_X1.
+Warning: cell tau2015_s27_Late/DFFS_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/DFFS_X1.
+Warning: cell tau2015_s27_Early/DFFS_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/DFFS_X2.
+Warning: cell tau2015_s27_Late/DFFS_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/DFFS_X2.
+Warning: cell tau2015_s27_Early/DFF_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/DFF_X1.
+Warning: cell tau2015_s27_Late/DFF_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/DFF_X1.
+Warning: cell tau2015_s27_Early/DFF_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/DFF_X2.
+Warning: cell tau2015_s27_Late/DFF_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/DFF_X2.
+Warning: cell tau2015_s27_Early/SDFFRS_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFFRS_X1.
+Warning: cell tau2015_s27_Early/SDFFRS_X1 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFFRS_X1.
+Warning: cell tau2015_s27_Early/SDFFRS_X1 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFFRS_X1.
+Warning: cell tau2015_s27_Late/SDFFRS_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFFRS_X1.
+Warning: cell tau2015_s27_Late/SDFFRS_X1 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFFRS_X1.
+Warning: cell tau2015_s27_Late/SDFFRS_X1 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFFRS_X1.
+Warning: cell tau2015_s27_Early/SDFFRS_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFFRS_X2.
+Warning: cell tau2015_s27_Early/SDFFRS_X2 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFFRS_X2.
+Warning: cell tau2015_s27_Early/SDFFRS_X2 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFFRS_X2.
+Warning: cell tau2015_s27_Late/SDFFRS_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFFRS_X2.
+Warning: cell tau2015_s27_Late/SDFFRS_X2 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFFRS_X2.
+Warning: cell tau2015_s27_Late/SDFFRS_X2 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFFRS_X2.
+Warning: cell tau2015_s27_Early/SDFFR_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFFR_X1.
+Warning: cell tau2015_s27_Early/SDFFR_X1 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFFR_X1.
+Warning: cell tau2015_s27_Early/SDFFR_X1 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFFR_X1.
+Warning: cell tau2015_s27_Late/SDFFR_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFFR_X1.
+Warning: cell tau2015_s27_Late/SDFFR_X1 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFFR_X1.
+Warning: cell tau2015_s27_Late/SDFFR_X1 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFFR_X1.
+Warning: cell tau2015_s27_Early/SDFFR_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFFR_X2.
+Warning: cell tau2015_s27_Early/SDFFR_X2 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFFR_X2.
+Warning: cell tau2015_s27_Early/SDFFR_X2 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFFR_X2.
+Warning: cell tau2015_s27_Late/SDFFR_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFFR_X2.
+Warning: cell tau2015_s27_Late/SDFFR_X2 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFFR_X2.
+Warning: cell tau2015_s27_Late/SDFFR_X2 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFFR_X2.
+Warning: cell tau2015_s27_Early/SDFFS_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFFS_X1.
+Warning: cell tau2015_s27_Early/SDFFS_X1 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFFS_X1.
+Warning: cell tau2015_s27_Early/SDFFS_X1 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFFS_X1.
+Warning: cell tau2015_s27_Late/SDFFS_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFFS_X1.
+Warning: cell tau2015_s27_Late/SDFFS_X1 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFFS_X1.
+Warning: cell tau2015_s27_Late/SDFFS_X1 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFFS_X1.
+Warning: cell tau2015_s27_Early/SDFFS_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFFS_X2.
+Warning: cell tau2015_s27_Early/SDFFS_X2 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFFS_X2.
+Warning: cell tau2015_s27_Early/SDFFS_X2 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFFS_X2.
+Warning: cell tau2015_s27_Late/SDFFS_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFFS_X2.
+Warning: cell tau2015_s27_Late/SDFFS_X2 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFFS_X2.
+Warning: cell tau2015_s27_Late/SDFFS_X2 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFFS_X2.
+Warning: cell tau2015_s27_Early/SDFF_X1 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFF_X1.
+Warning: cell tau2015_s27_Early/SDFF_X1 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFF_X1.
+Warning: cell tau2015_s27_Early/SDFF_X1 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFF_X1.
+Warning: cell tau2015_s27_Late/SDFF_X1 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFF_X1.
+Warning: cell tau2015_s27_Late/SDFF_X1 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFF_X1.
+Warning: cell tau2015_s27_Late/SDFF_X1 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFF_X1.
+Warning: cell tau2015_s27_Early/SDFF_X2 CK -> D timing group hold not found in cell tau2015_s27_Late/SDFF_X2.
+Warning: cell tau2015_s27_Early/SDFF_X2 CK -> SE timing group hold not found in cell tau2015_s27_Late/SDFF_X2.
+Warning: cell tau2015_s27_Early/SDFF_X2 CK -> SI timing group hold not found in cell tau2015_s27_Late/SDFF_X2.
+Warning: cell tau2015_s27_Late/SDFF_X2 CK -> D timing group setup not found in cell tau2015_s27_Early/SDFF_X2.
+Warning: cell tau2015_s27_Late/SDFF_X2 CK -> SE timing group setup not found in cell tau2015_s27_Early/SDFF_X2.
+Warning: cell tau2015_s27_Late/SDFF_X2 CK -> SI timing group setup not found in cell tau2015_s27_Early/SDFF_X2.
+Warning: s27.sdc line 18, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: s27.sdc line 19, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: s27.sdc line 20, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: s27.sdc line 21, set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: F2 (rising edge-triggered flip-flop clocked by clk_net)
+Endpoint: G17 (output port clocked by clk_net)
+Path Group: clk_net
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk_net (rise edge)
+ 104.84  104.84   clock network delay (propagated)
+   0.00  104.84 ^ F2/CK (DFFR_X2)
+ 141.35  246.19 ^ F2/Q (DFFR_X2)
+   0.00  246.19 ^ G17 (out)
+         246.19   data arrival time
+
+   1.00    1.00   clock clk_net (rise edge)
+   0.00    1.00   clock network delay (propagated)
+   0.00    1.00   clock reconvergence pessimism
+   1.20    2.20   output external delay
+           2.20   data required time
+---------------------------------------------------------
+           2.20   data required time
+        -246.19   data arrival time
+---------------------------------------------------------
+        -243.99   slack (VIOLATED)
+
+
+Startpoint: F2 (rising edge-triggered flip-flop clocked by clk_net)
+Endpoint: G17 (output port clocked by clk_net)
+Path Group: clk_net
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk_net (rise edge)
+  94.85   94.85   clock network delay (propagated)
+   0.00   94.85 ^ F2/CK (DFFR_X2)
+ 103.23  198.08 v F2/Q (DFFR_X2)
+   0.00  198.08 v G17 (out)
+         198.08   data arrival time
+
+   0.00    0.00   clock clk_net (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.00    0.00   clock reconvergence pessimism
+   2.10    2.10   output external delay
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+        -198.08   data arrival time
+---------------------------------------------------------
+         195.98   slack (MET)
+
+
+Startpoint: F2 (rising edge-triggered flip-flop clocked by clk_net)
+Endpoint: G17 (output port clocked by clk_net)
+Path Group: clk_net
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk_net (rise edge)
+ 144.66  144.66   clock network delay (propagated)
+   0.00  144.66 ^ F2/CK (DFFR_X2)
+ 141.35  286.01 ^ F2/Q (DFFR_X2)
+   0.00  286.01 ^ G17 (out)
+         286.01   data arrival time
+
+   1.00    1.00   clock clk_net (rise edge)
+   0.00    1.00   clock network delay (propagated)
+   0.00    1.00   clock reconvergence pessimism
+   1.20    2.20   output external delay
+           2.20   data required time
+---------------------------------------------------------
+           2.20   data required time
+        -286.01   data arrival time
+---------------------------------------------------------
+        -283.81   slack (VIOLATED)
+
+
+Startpoint: F2 (rising edge-triggered flip-flop clocked by clk_net)
+Endpoint: G17 (output port clocked by clk_net)
+Path Group: clk_net
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk_net (rise edge)
+ 130.87  130.87   clock network delay (propagated)
+   0.00  130.87 ^ F2/CK (DFFR_X2)
+ 103.23  234.10 v F2/Q (DFFR_X2)
+   0.00  234.10 v G17 (out)
+         234.10   data arrival time
+
+   0.00    0.00   clock clk_net (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.00    0.00   clock reconvergence pessimism
+   2.10    2.10   output external delay
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+        -234.10   data arrival time
+---------------------------------------------------------
+         232.00   slack (MET)
+
+

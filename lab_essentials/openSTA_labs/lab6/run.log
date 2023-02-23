@@ -1,0 +1,89 @@
+OpenSTA 2.3.1 6802190c15 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+create_clock -period 1 -name clk_net [get_ports clk_net]
+set_input_delay 0 -min -rise [get_ports G1] -clock clk_net
+set_input_delay 0 -min -fall [get_ports G1] -clock clk_net
+set_input_delay 0 -max -rise [get_ports G1] -clock clk_net
+set_input_delay 0 -max -fall [get_ports G1] -clock clk_net
+set_input_transition 5 -min -rise [get_ports G1] 
+set_input_transition 5 -min -fall [get_ports G1] 
+set_input_transition 5 -max -rise [get_ports G1] 
+set_input_transition 5 -max -fall [get_ports G1] 
+set_input_delay 0 -min -rise [get_ports G2] -clock clk_net
+set_input_delay 0 -min -fall [get_ports G2] -clock clk_net
+set_input_delay 0 -max -rise [get_ports G2] -clock clk_net
+set_input_delay 0 -max -fall [get_ports G2] -clock clk_net
+set_input_transition 5 -min -rise [get_ports G2] 
+set_input_transition 5 -min -fall [get_ports G2] 
+set_input_transition 5 -max -rise [get_ports G2] 
+set_input_transition 5 -max -fall [get_ports G2] 
+set_input_transition 5 -min -rise [get_ports clk_net]
+set_input_transition 5 -min -fall [get_ports clk_net]
+set_input_transition 5 -max -rise [get_ports clk_net]
+set_input_transition 5 -max -fall [get_ports clk_net]
+set_input_delay 0 -min -rise [get_ports reset_net] -clock clk_net
+set_input_delay 0 -min -fall [get_ports reset_net] -clock clk_net
+set_input_delay 0 -max -rise [get_ports reset_net] -clock clk_net
+set_input_delay 0 -max -fall [get_ports reset_net] -clock clk_net
+set_input_transition 5 -min -rise [get_ports reset_net] 
+set_input_transition 5 -min -fall [get_ports reset_net] 
+set_input_transition 5 -max -rise [get_ports reset_net] 
+set_input_transition 5 -max -fall [get_ports reset_net] 
+set_input_delay 0 -min -rise [get_ports G3] -clock clk_net
+set_input_delay 0 -min -fall [get_ports G3] -clock clk_net
+set_input_delay 0 -max -rise [get_ports G3] -clock clk_net
+set_input_delay 0 -max -fall [get_ports G3] -clock clk_net
+set_input_transition 5 -min -rise [get_ports G3]
+set_input_transition 5 -min -fall [get_ports G3]
+set_input_transition 5 -max -rise [get_ports G3]
+set_input_transition 5 -max -fall [get_ports G3]
+set_input_delay 0 -min -rise [get_ports G0] -clock clk_net
+set_input_delay 0 -min -fall [get_ports G0] -clock clk_net
+set_input_delay 0 -max -rise [get_ports G0] -clock clk_net
+set_input_delay 0 -max -fall [get_ports G0] -clock clk_net
+set_input_transition 5 -min -rise [get_ports G0]
+set_input_transition 5 -min -fall [get_ports G0]
+set_input_transition 5 -max -rise [get_ports G0]
+set_input_transition 5 -max -fall [get_ports G0]
+set_output_delay -2.1 -min -rise [get_ports G17] -clock clk_net
+set_output_delay -2.1 -min -fall [get_ports G17] -clock clk_net
+set_output_delay -1.2 -max -rise [get_ports G17] -clock clk_net
+set_output_delay -1.2 -max -fall [get_ports G17] -clock clk_net
+set_load -pin_load 4 [get_ports G17]
+set_clock_gating_check -setup 1.0 -hold 0.5 [get_clocks clk_net]
+set_propagated_clock [all_clocks]
+Startpoint: F1 (rising edge-triggered flip-flop clocked by clk_net)
+Endpoint: clkgate (rising clock gating-check end-point clocked by clk_net)
+Path Group: clk_net
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk_net (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   0.00    0.00 ^ F1/CLK (sky130_fd_sc_hd__dfbbp_1)
+   1.08    1.08 ^ F1/Q (sky130_fd_sc_hd__dfbbp_1)
+   0.05    1.12 v U3/Y (sky130_fd_sc_hd__inv_1)
+   0.05    1.18 ^ U4/Y (sky130_fd_sc_hd__inv_1)
+   0.05    1.22 v U6/Y (sky130_fd_sc_hd__nand2_1)
+   0.08    1.30 ^ U7/Y (sky130_fd_sc_hd__nor2_1)
+   0.00    1.30 ^ clkgate/GATE (sky130_fd_sc_hd__dlclkp_4)
+           1.30   data arrival time
+
+   1.00    1.00   clock clk_net (rise edge)
+   0.00    1.00   clock network delay (propagated)
+   0.00    1.00   clock reconvergence pessimism
+           1.00 ^ clkgate/CLK (sky130_fd_sc_hd__dlclkp_4)
+  -0.37    0.63   library setup time
+           0.63   data required time
+---------------------------------------------------------
+           0.63   data required time
+          -1.30   data arrival time
+---------------------------------------------------------
+          -0.67   slack (VIOLATED)
+
+
